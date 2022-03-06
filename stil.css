@@ -1,0 +1,399 @@
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+body{
+    margin:0;
+    padding: 0;
+    box-sizing: content-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+body{
+    background-color: rgb(167, 204, 237);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    
+}
+
+.container{
+    position: relative;
+    width: 100%;
+    max-width: 1000px;
+    min-height: 1000px;
+    margin: 50px;
+    background: white;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    box-shadow: 0 35px 55px rgb(87, 85, 85);
+}
+
+.container .lijeva{
+    position: relative;
+    background: #005689;
+    padding: 50px;
+}
+
+.tekstProfila{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px;
+    border-bottom: 1px solid grey;
+
+}
+
+.tekstProfila .slikaProfila{
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+    overflow: hidden;
+    margin-top: 20px;
+    border: 2px solid #f9f9f9;
+
+}
+
+.tekstProfila .slikaProfila .profilna{
+    position:absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+
+.tekstProfila h2 {
+    color: #f9f9f9;
+    font-size: 20px;
+    margin-top: 20px;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 600;
+    line-height:normal;
+}
+
+.tekstProfila h2 span {
+    color: rgb(167, 204, 237);
+    font-size: 15px;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 300;
+    line-height:normal;
+}
+
+.kontaktInfo{
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.naslovInfo{
+    color: #f9f9f9;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+
+.kontaktInfo ul{
+    position:relative;
+}
+
+.kontaktInfo ul li{
+    position: relative;
+    list-style: none;
+    margin: 10px 0;
+    cursor: pointer;
+}
+
+.kontaktInfo ul li .ikona {
+    display:inline-block ;
+    width: 30px;
+    font-size: 18px;
+    color: rgb(99, 173, 242);
+}
+
+.kontaktInfo ul li span {
+    font-weight: 300;
+    color: #f9f9f9;
+    
+}
+
+.edukacijaInfo{
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.edukacijaInfo li{
+
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+
+.edukacijaInfo h5{
+    color:rgb(99, 173, 242);
+    font-weight: 500;
+}
+
+.edukacijaInfo h4{
+    color:#f9f9f9;
+    font-weight: 200;
+}
+
+.edukacijaInfo h4:nth-child(2){
+    color:#f9f9f9;
+    font-weight: 500;
+}
+
+.jezikInfo{
+    font-weight: 100;
+    color: #f9f9f9;
+    list-style: none;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.jezikInfo li{
+  font-weight: 200;
+  color: #f9f9f9;
+  list-style: none;
+}
+
+.container .desna{
+    position: relative;
+    background: #e7f6ff;
+    padding: 10px;
+}
+
+.oMeni{
+    margin-bottom: 50px;
+    
+
+}
+.oMeni:last-child{
+    margin-bottom: 0;
+}
+
+.naslov{
+    color: #005689;
+    font-weight: 700;
+    font-size: 25px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+p{
+    color: rgb(87, 78, 78);
+    letter-spacing: 1px;
+}
+
+.vjestine{
+  color: #005689;
+  font-weight: 700;
+  font-size: 25px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 70px;
+  text-align: center;
+  margin-top: 100px;
+}
+
+
+.hobi ul{
+  display: grid;
+  margin-top: 40px;
+  margin-bottom: 100px;
+  grid-template-columns: repeat(3,1fr);
+  text-align: center;
+ 
+}
+
+.hobi ul li{
+  list-style: none;
+  color: rgb(87, 78, 78);
+  font-weight: 500;
+  margin: 5px 5px;
+  font-size: 20px;
+}
+
+.hobi ul li .fa{
+  color: #005689;
+  font-size: 18px;
+  width: 20px;
+}
+
+.fa:hover {
+  opacity: 0.7;
+}
+
+.mreze{
+  color: #005689;
+  font-weight: 700;
+  font-size: 25px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 1px;
+  text-align: center;
+  margin-top: 100px;
+  
+
+  
+}
+
+.mreze ul li a{
+  text-decoration: none;
+}
+
+.mreze ul{
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.mreze ul li{
+  margin-top: 30px;
+  list-style-type: none;
+
+}
+
+.mreze ul li .fa{
+
+  margin: 20px 20px 20px 20px;
+  color: #005689;
+  font-size: 2rem;
+  width: 20px;
+}
+
+:root {
+     
+    --color-icon: #535c68;  
+    --social-icon1: #e4405f;
+    --social-icon2: #3b5999;
+    --social-icon3: #2e2e2e;
+  
+  }
+  
+ 
+  section {
+    width: 100%;
+    height: 20vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;  
+    background: var(--bg);
+    z-index: -10;
+  }
+  
+  .icon-list {
+    width: 100%;
+    max-width: 50rem;
+    padding: 0 1.5rem;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .icon-item {
+    list-style: none
+  }
+  
+  .icon-link {  
+    display: inline-flex;
+    font-size: 3rem;  
+    text-decoration: none;  
+    color: var(--color-icon);
+    width: 6rem;
+    height: 6rem;   
+    transition: .5s linear;
+    position: relative;
+    z-index: 1;
+    margin: auto
+  }
+  
+  .icon-link:hover {
+    color: #fff;
+  }
+  
+  .icon-link i {
+    margin: auto;    
+  }
+  
+  .icon-link::before {  
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 6rem;
+    height: 6rem;
+    background: #000;
+    border-radius: 50%;
+    z-index: -1;
+    transform: scale(0);
+    transition: 0.3s cubic-bezier(.95, .32, .37, 1.21);
+  }
+    
+  .icon-link:hover::before {  
+    transform: scale(1);
+  }
+  
+  .icon-item:nth-child(1) a:hover:before { 
+    background: var(--social-icon1); 
+  }
+  
+  .icon-item:nth-child(2) a:hover:before { 
+    background: var(--social-icon2); 
+  }
+  
+  .icon-item:nth-child(3) a:hover:before { 
+    background: var(--social-icon3); 
+  }
+  
+  .icon-item:nth-child(4) a:hover:before { 
+    background: var(--social-icon4); 
+  }
+  
+  .icon-item:nth-child(5) a:hover:before { 
+    background: var(--social-icon5); 
+  }
+
+  @media(max-width: 1000px){
+    .container{
+      margin: 10px;
+      grid-template-columns: repeat(1,1fr);
+    }
+    .hobi{
+      grid-template-columns: repeat(2,1fr);
+  }}
+
+  @media(max-width:600px){
+
+    .hobi{
+      grid-template-columns: repeat(1,1fr);
+      flex-direction: column;
+  }
+}
